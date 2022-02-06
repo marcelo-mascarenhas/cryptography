@@ -4,7 +4,6 @@
 
 #define STANDARD_SIZE  1024
 
-//Questão 1
 void mdc_estendido(mpz_t g, mpz_t x, mpz_t y, const mpz_t a, const mpz_t b){
 
   mpz_t first_num, second_num, rest; mpz_init(first_num); mpz_init(second_num); mpz_init(rest);
@@ -42,7 +41,6 @@ void mdc_estendido(mpz_t g, mpz_t x, mpz_t y, const mpz_t a, const mpz_t b){
   mpz_clears(first_num, second_num, new_x, new_y, qz, rest, NULL);
 }
 
-//Questão 2
 int inverso_modular(mpz_t r, const mpz_t a, const mpz_t n){
 
   mpz_t x, y, g; mpz_inits(x, y, g, NULL);
@@ -59,7 +57,6 @@ int inverso_modular(mpz_t r, const mpz_t a, const mpz_t n){
   
 }
 
-//Questão 3
 void exp_binaria(mpz_t r, const mpz_t b, const mpz_t e, const mpz_t n){
 
   mpz_t base, expoente, temp2; mpz_inits(base, expoente,temp2, NULL);
